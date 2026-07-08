@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: url("./assets/pexels-kaplanart-30776675.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    width: 850px;
+    backdrop-filter: blur(40px);
+    background-color: rgba(245, 245, 245, 0.154);
+    border-radius: 20px;
+    overflow: visible;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.h1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    background-color: transparent;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.671);
+    color: white;
+    padding: 12px;
+}
+
+form button {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.671);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 15px !important;
+}
+
+thead {
+    margin: 20px;
+    color: white;
+}
+
+thead tr th {
+    padding: 10px;
+    font-size: 17px;
+}
+
+tbody td {
+    padding: 12px;
+    text-align: center;
+    color: white;
+    word-break: break-word;
+    white-space: normal;
+}
+
+td button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn1 {
+    background-color: #38D2D2;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.btn2 {
+    background-color: rgba(254, 47, 47, 0.894);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.th {
+    border-radius: 10px;
+}
+
+.button-91 {
+    color: #fff;
+    padding: 15px 25px;
+    background-color: #38D2D2;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .app{
+        width:100%;
+        padding:20px;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
+    }
+
+    form button{
+        width:100%;
+    }
+}
